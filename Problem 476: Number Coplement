@@ -1,4 +1,5 @@
-    //Problem 476: Number Coplement
+
+//Problem 476: Number Coplement
     
     //My solution:
     class Solution {
@@ -25,3 +26,13 @@
     		return tmp^num;
     	}
     };
+    
+//a more concise solution
+class Solution {
+public:
+	int findComplement(int num) {
+		unsigned mask = ~0;
+		while (num & mask) mask <<= 1;
+		return ~mask & ~num;
+	}
+};
