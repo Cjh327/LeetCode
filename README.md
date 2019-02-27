@@ -1,2 +1,2 @@
 # LeetCode
-record the codes I write and some outstanding codes written by others on LeetCode
+Codes I wrote and some outstanding codes on LeetCode
