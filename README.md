@@ -1,6 +1,6 @@
 # LeetCode
 Codes I wrote and some outstanding codes on LeetCode
-### Problem 69   
+### Problem 69. Sqrt(x)
   Implement int sqrt(int x).  
   **Notice:**  
   Divide and Conquer: mid * mid may overflow. Convert int to long long.  
