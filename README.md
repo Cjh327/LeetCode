@@ -10,4 +10,4 @@ Codes I wrote and some outstanding codes on LeetCode
 ###  x=2^n
   x>0 && ((x-1) & x == 0)
 ### Problem 137. Single Number II
-  Use two variables $a$ and $b$ to implement state transition 00->01->10->00
+  Use two variables a and b to implement state transition 00->01->10->00
