@@ -9,3 +9,5 @@ Codes I wrote and some outstanding codes on LeetCode
   Use a slow pointer and a fast pointer. If the fast pointer catch up the slow one, there is a cycle.  
 ###  x=2^n
   x>0 && ((x-1) & x == 0)
+### Problem 137. Single Number II
+  Use two variables $a$ and $b$ to implement state transition 00->01->10->00
