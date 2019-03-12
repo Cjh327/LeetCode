@@ -14,3 +14,5 @@ Codes I wrote and some outstanding codes on LeetCode
 ### Problem 260. Single Number III
   1. xor operation on total array with result a.  
   2. choose a 1-bit of a, xor it with the whole array. This operation split the whole array into two parts, with a single number in it respectively.
+### Problem 189. Rotate Array
+  reverse 3 times
