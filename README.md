@@ -1,10 +1,26 @@
 # LeetCode
-Codes I wrote and some outstanding codes on LeetCode
+### Problem 5. 最长回文子串（Longest Palindromic Substring）
+
+$$
+\begin{align}
+dp[i,j]=\left\{\begin{matrix}
+dp[i+1,j-1],\quad &str[i]=str[j]\\ 
+0&o.w.
+\end{matrix}\right.
+\end{align}
+$$
+
+$dp[i,j]=1$表示str[i,...j]为回文子串
+
 ### Problem 69. Sqrt(x)
-  Implement int sqrt(int x).  
-  **Notice:**  
-  Divide and Conquer: mid * mid may overflow. Convert int to long long.  
-  Newton's method is another way to solve it.
+Implement int sqrt(int x).  
+
+**Notice:**  
+
+Divide and Conquer: mid * mid may overflow. Convert int to long long.  
+
+Newton's method is another way to solve it.
+
 ### Problem 141. Linked List Cycle
   Use a slow pointer and a fast pointer. If the fast pointer catch up the slow one, there is a cycle.  
 ###  x=2^n
