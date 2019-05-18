@@ -10,7 +10,26 @@ dp[i+1,j-1],\quad &str[i]=str[j]\\
 \end{align}
 $$
 
-$dp[i,j]=1$表示str[i,...j]为回文子串
+$dp[i,j]=1$表示 `str[i,...,j]` 为回文子串
+
+### Problem 53. 最大子序和（Maximum Subarray）
+
+从第一个大于0的数开始找
+
+```C++
+ int maxSubArray(vector<int> &nums) {
+        int maxSum = nums[0];
+        int curSum = 0;
+        for (int num : nums) {
+            if (curSum > 0) curSum += num;
+            else curSum = num;
+            if (curSum > maxSum) {
+                maxSum = curSum;
+            }
+        }
+        return maxSum;
+    }  
+```
 
 ### Problem 69. Sqrt(x)
 Implement int sqrt(int x).  
