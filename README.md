@@ -35,6 +35,10 @@ $dp[i,j]=1$表示 `str[i,...,j]` 为回文子串
 
 组合数，用递推关系计算，注意乘法溢出
 
+### Problem 63. Unique Paths II
+
+有障碍物，障碍物点无法到达，注意初始化边界时，障碍物后面的点也无法到达。
+
 ### Problem 69. Sqrt(x)
 
 Implement int sqrt(int x).  
