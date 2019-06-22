@@ -62,6 +62,16 @@ dynamic programming
 
 `isBreak[i]` means that `s[0...i]` is word break
 
+### Problem 213. House Robber II
+
+分情况，分为**可以偷第一家**和**绝不偷第一家**
+
+**可以偷第一家**：这种情况下第一家可能被偷也可能不被偷，但最后一家一定不会被偷
+
+**绝不偷第一家**：这种情况下第一家绝不被偷，因此最后一家可能被偷
+
+两种情况中的最大值为答案
+
 ### Problem 260. Single Number III
   1. xor operation on total array with result a.  
   2. choose a 1-bit of a, xor it with the whole array. This operation split the whole array into two parts, with a single number in it respectively.
