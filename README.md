@@ -58,7 +58,7 @@ Newton's method is another way to solve it.
 
 ### Problem 139. Word Break
 
-dynamic planning
+dynamic programming
 
 `isBreak[i]` means that `s[0...i]` is word break
 
