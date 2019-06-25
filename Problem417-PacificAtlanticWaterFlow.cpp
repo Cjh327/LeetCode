@@ -38,6 +38,7 @@ public:
 		}
 		return v;
 	}
+
 	void search(vector<vector<int>>& matrix, vector<vector<int>>& ap, int i, int j, int last) {
 		if (i < 0 || i >= matrix.size() || j < 0 || j >= matrix[0].size()) {
 			return;
@@ -54,6 +55,7 @@ public:
 			search(matrix, ap, i - 1, j, last);
 		}
 	}
+	
 	void search2(vector<vector<int>>& matrix, vector<vector<int>>& ap, int i, int j, int last) {
 		if (i < 0 || i >= matrix.size() || j < 0 || j >= matrix[0].size()) {
 			return;
