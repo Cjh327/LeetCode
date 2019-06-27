@@ -77,3 +77,13 @@ dynamic programming
   2. choose a 1-bit of a, xor it with the whole array. This operation split the whole array into two parts, with a single number in it respectively.
 ### Problem 189. Rotate Array
   reverse 3 times
+
+### Problem 103. Binary Tree Zigzag Level Order Traversal
+
+翻转vector
+
+```C++
+#include <algorithm>
+reverse(v.begin(), v.end());
+```
+
