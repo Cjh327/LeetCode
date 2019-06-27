@@ -87,3 +87,6 @@ dynamic programming
 reverse(v.begin(), v.end());
 ```
 
+### Problem 559. Maximum Depth of N-ary Tree
+
+层序遍历，每层最后一个节点后面入队NULL，注意后一层最后一个节点额外判断，直接返回。
