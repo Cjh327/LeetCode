@@ -29,6 +29,5 @@ int main() {
 	for (int x : nums) {
 		cout << x << " ";
 	}
-	cout << endl;
 	return 0;
 }
