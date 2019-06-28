@@ -90,3 +90,17 @@ reverse(v.begin(), v.end());
 ### Problem 559. Maximum Depth of N-ary Tree
 
 层序遍历，每层最后一个节点后面入队NULL，注意后一层最后一个节点额外判断，直接返回。
+
+### Problem26. RemoveDuplicatesfromSortedArray
+
+在一个有序数组中删除重复元素。
+
+两个索引 i, j，分别指向不重复位置和搜索位置
+
+注意输入为空数组的情况
+
+```C++
+// vector 删除一段元素
+v.erase(v.begin()+i+1, v.end())
+```
+
