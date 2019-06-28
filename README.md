@@ -104,3 +104,6 @@ reverse(v.begin(), v.end());
 v.erase(v.begin()+i+1, v.end())
 ```
 
+### Problem771. JewelsandStones
+
+频繁在同一个集合中查找注意使用map
