@@ -107,3 +107,14 @@ v.erase(v.begin()+i+1, v.end())
 ### Problem771. JewelsandStones
 
 频繁在同一个集合中查找注意使用map
+
+### Problem500. KeyboardRow
+
+string中判断某一个字符或字符串是否包含其中：
+
+```C++
+if (str.find('c') == str.npos) {
+	// 未找到
+}
+```
+
