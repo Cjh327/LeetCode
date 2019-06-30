@@ -151,3 +151,17 @@ int KMP(string haystack, string needle) {
 }
 ```
 
+### Problem56. MergeIntervals
+
+先排序，再合并
+
+注意sort函数，两元素相等时要返回false
+
+```C++
+sort(intervals.begin(), intervals.end(), [](const vector<int>& interval1, const vector<int>& interval2) -> bool {
+		if (interval1[0] < interval2[0]) return true;
+		if (interval1[0] > interval2[0]) return false;
+		return interval1[1] < interval2[1];
+});
+```
+
