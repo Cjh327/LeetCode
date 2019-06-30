@@ -30,9 +30,8 @@ int main() {
 	vector<int> nums{ 2,0,2,1,1,0,2,1,0,1 };
 	Solution sol;
 	sol.sortColors(nums);
-	for (int n : nums) {
+	for (int n : nums)
 		cout << n << " ";
-	}
 	cout << endl;
 	return 0;
 }
