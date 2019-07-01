@@ -165,3 +165,14 @@ sort(intervals.begin(), intervals.end(), [](const vector<int>& interval1, const 
 });
 ```
 
+### Problem95. UniqueBinarySearchTreesII
+
+输入数字n，输出不同种类的二叉搜索树
+
+用DFS，递归解决，递归函数生成区间为[begin, end]的二叉搜索树，从begin到end依次选取一个数字作为根节点，分别生成左子树和右子树，再拼起来。
+
+### Problem96. UniqueBinarySearchTrees
+
+输入数字n，输出不同种类的二叉搜索树个数
+
+动态规划，左子树个数乘右子树个数
