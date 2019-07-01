@@ -176,3 +176,26 @@ sort(intervals.begin(), intervals.end(), [](const vector<int>& interval1, const 
 输入数字n，输出不同种类的二叉搜索树个数
 
 动态规划，左子树个数乘右子树个数
+
+### Problem264. UglyNumberII
+
+2，3，5的倍数
+
+从小到大依次生成，存三个指针，避免生成重复的数字。
+
+```C++
+int nthUglyNumber(int n) {
+	vector<int> v(n);
+	v[0] = 1;
+	int i2 = 0, i3 = 0, i5 = 0;
+	for (int i = 1; i < n; i++) {
+		int tmp = min(2 * v[i2], min(3 * v[i3], 5 * v[i5]));
+		if (tmp == 2 * v[i2]) i2++;
+		if (tmp == 3 * v[i3]) i3++;
+		if (tmp == 5 * v[i5]) i5++;
+		v[i] = tmp;
+	}
+	return v[n - 1];
+}
+```
+
